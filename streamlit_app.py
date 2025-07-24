@@ -23,12 +23,7 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    # Optional: Custom CSS
-    # st.markdown("""
-    # <style>
-    # .stSidebar { background-color: #f5f5f5; }
-    # </style>
-    # """, unsafe_allow_html=True)
+
 
     # Sidebar navigation
     st.sidebar.title("🧭 Navigation")
