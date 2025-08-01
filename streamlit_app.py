@@ -1,10 +1,10 @@
 import streamlit as st
 from dotenv import load_dotenv
 
-# Load environment variables early
+
 load_dotenv()
 
-# Try importing UI modules
+
 try:
     from modules.weather.ui import render_weather_tab
     from modules.energy.ui import render_energy_tab
@@ -12,7 +12,7 @@ try:
     from modules.analyzer.ui import render_analyzer_tab
 except ImportError as e:
     st.error(f"Module import error: {e}")
-    st.stop()  # Prevent app from continuing if imports fail
+    st.stop()
 
 
 def main():
